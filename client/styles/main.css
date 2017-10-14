@@ -1,0 +1,523 @@
+/*@media(min-width: 320px) and (max-width: 638px){ if the width is at least 600px change the fot size to 100%
+    nav{
+       display:none;
+       visibility: hidden;
+    }
+    section{
+      width:100%;
+      
+    }
+    article,footer{
+      width:100%;
+    }
+
+} */
+
+.head {
+  background-color: #262626;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 15%;
+}
+
+nav{
+  float: left;
+  width: 20%;
+  height: 85%;
+  position: fixed;
+  background-color:	#53c687;
+  bottom:0;
+   
+}
+
+article{
+  
+ position: fixed;
+    display: inline;
+    float: right;
+    width: 80%;
+    height: 85%;
+    bottom:0;
+    background-color: #f2f2f2;
+}
+
+body{
+  margin: 0 0 0 0;
+}
+
+section{
+  float:right;
+   width:80%;
+  height:100%;
+  position:inherit;
+   background-color:#f2f2f2;
+}
+
+footer{
+   
+  position: fixed;
+    bottom: 0;
+    width: 80%;
+   
+    float: right;
+    right: 0;
+    text-align: right;
+    display: block;
+    background-color:white;
+}
+
+
+
+
+
+
+
+.input {
+ 
+    position: absolute;
+    border-radius: 15%;
+    float: left;
+    width: 73%;
+    height: 80%;  
+}
+
+li {
+
+list-style-type: none; /* disc, square, decimal, circle...*/
+
+}
+
+h1{
+  -webkit-margin-start: 4%;
+  margin-bottom: 0; 
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.stats{
+  text-align: right;
+  float: right;
+  position: relative;
+  top: -1.3em;
+  right: 1em;
+  margin: 0;
+}
+
+.txt-msg{
+  width: 90%;
+    bottom: 0;
+    position: relative;
+    padding: 1%;
+    float: left;
+    border-color: white;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.txt-msg:focus{
+  outline: none;
+}
+
+.msg{
+   background-color: white;
+    border-radius: 10px;
+    padding: 0.5%;
+    padding-right: 1%;
+    border: 1px solid #b3b3b3;
+    display: inline-grid;
+    min-width: 30%;
+    max-width: 600px;
+    word-wrap: break-word;
+    word-break: break-all;
+    top: 0;
+}
+
+.msg:hover, .msg:focus{
+  background-color: #e6e6e6;
+  outline:0 !important;
+}
+
+.msg:hover .delete-btn{
+    display:inline-block;
+    float: right; 
+  font-family: monospace;
+}
+
+.msg:focus .delete-btn{
+    display:inline-block;
+    float: right; 
+  font-family: monospace;
+}
+
+
+.font{
+  font-size: small;
+}
+
+p.small{
+  line-height: 1.5;
+  margin: 0; 
+  padding:0.5%;
+  font-size: small;
+  display: inline-block;
+  width: 100%;
+}
+
+p.between{
+  line-height: 0.8;
+  margin: 0; 
+  padding:0;
+}
+
+hr{
+  border: 0;
+    width: 100%;
+    height: 0.05rem;
+    margin: 0;
+    background-color: #b3b3b3;
+}
+
+.delete-btn{
+  display:none;
+ 
+}
+
+button.link { 
+  background:none;
+  border:none; 
+  padding: 0;
+  margin:0;
+  cursor: pointer;
+  }
+
+  button.link:focus{
+    outline: none;
+  }
+
+  .img-circle {
+   border-radius: 50%;
+    width: 2em;
+    display: inline;
+    height: 2em;
+    top: 0;
+    background: white;
+    position: relative;
+    margin-right: 0.5em;
+    margin-bottom: 1%;
+}
+
+.triangle{
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top: 24.5%;
+    left: 35%;
+}
+
+.circle-btn{
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    border: 0;
+    background: white;
+    border: none;
+    padding-top: 0;
+    right: 1.4rem;
+}
+
+.Modal {
+	  border-radius: 3px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    height: 25%;
+    z-index: 5;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    /*text-align: center;*/
+}
+
+.Modal-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+  z-index: 3;
+}
+
+input[type=email]{
+  font-weight:bold;
+   border-radius: 8px; 
+   border: 1px solid #ccc;
+   border-color: #ccc; 
+   padding: 0.4em;
+   text-align: left;
+}
+
+input[type=email]:focus{
+  outline: none;
+}
+
+input{
+  font-weight:bold;
+   border-radius: 8px; 
+   border: 1px solid #ccc;
+   border-color: #ccc; 
+   padding: 0.4em;
+   width: 70%;
+   text-align: left;
+}
+
+input:focus{
+  outline: none;
+}
+
+
+.anms{
+  color: #A7A8AA;
+  /*text-decoration: underline;*/
+  cursor: pointer;
+  
+  font-size: small;
+  padding-left: 1.5em;
+}
+
+span.img-msg{
+  position: initial;
+    display: flex;
+    min-width: 100%;
+    padding-right: 0.5%;
+}
+
+
+/*      ///////////////////////////////////////////////////////////////////////////////////////  */
+.scrollbar
+{
+	float: left;
+  height: 67%;
+  margin: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.time{
+  color: #b3b3b3;
+  font-size: smaller;
+}
+
+
+
+/*
+ *  STYLE 1
+ */
+
+.style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: white;
+}
+
+.style-1::-webkit-scrollbar
+{
+	width: 1%;
+	background-color: white;
+}
+
+.style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #e6e6e6;
+}
+
+div button {
+    float: right;
+}
+
+but{
+    position: absolute;
+    bottom: 0;
+    float: right;
+    clear: both;
+    right: 1%;
+    text-align: right;
+}
+
+
+html, body{
+  height: 100%; 
+}
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.content{
+  flex: 1;
+ 
+}
+
+.send-btn{
+  position: fixed;
+    float: right;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button:focus {outline:0 !important;}
+
+
+.visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+    position: absolute !important;
+    height: 1px; width: 1px; 
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+dt, dd { 
+  float: right;
+  margin: 0 0.2rem 0 0;
+   }
+
+dt { clear:both }
+
+
+.save{
+  background-color: #4CAF50; /*#228800*/
+  border: none;
+  font-size: small;
+    color: white;
+    padding: 0.2rem 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.close{
+  font-size: small;
+  background: #b3b3b3;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.lr{
+  text-align: left;
+  float: right;
+}
+
+.buttons{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    float: right;
+    margin: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.email{
+  text-align: left;
+  font-size: small;
+}
+
+.fullName{
+  font-size: small;
+  text-align: left;
+}
+
+main{
+  font-family: 'Open Sans', sans-serif;
+}
+
+ol{
+  width: 95.5%;
+}
+
+.logo{
+  padding-top: 1%;
+}
+
+.inpt{
+  text-align: left;
+}
+cite{
+  font-weight: bold;
+  font-style: normal;
+}
+.modal-title{
+  font-size: x-large;
+  margin: 0;
+}
+
+@media(min-width: 320px) and (max-width: 638px){
+    nav{
+       display:none;
+       visibility: hidden;
+    }
+    section{
+      width:100%;
+      
+    }
+    article,footer{
+      width:100%;
+    }
+    .Modal{
+        width:80%;
+        height: 82%;
+    }
+    .txt-msg{
+        width: 80%;
+    }
+    .lr{
+         text-align: left;
+         float: left;
+    }
+    .inpt{
+    float: left;
+    text-align: left;
+    position: absolute;
+    width: 13rem;
+    top: 2em;
+
+    }
+    .email{
+         top: 10em;
+        position: absolute;
+        float: left;
+        left: 0;
+        margin-left: 4rem;
+        text-align: left;
+        font-size: small;
+    }
+    .fullName{
+ 
+        position: absolute;
+        float: left;
+        left: 0;
+        margin-left: 4rem;
+        text-align: left;
+        font-size: small;
+    }
+    ol{
+        width: 92%;
+    }
+}
